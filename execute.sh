@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 npm i
 node controller/createComb.js
+npm i pm2 -g
 pm2 start process0/cop.js
 pm2 start process1/cop.js
 pm2 start process2/cop.js
